@@ -57,47 +57,47 @@ MonoBehaviour:
   - keyName: Semangka
     keyPoints: 100
     keyImage: {fileID: 5132463934339989631, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
-    keyArab: {fileID: 0}
+    keyArab: {fileID: -2937944484861216962, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
     keyClip: {fileID: 0}
   - keyName: Alpukat
     keyPoints: 100
     keyImage: {fileID: -5067599375076290027, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
-    keyArab: {fileID: 0}
+    keyArab: {fileID: -7044727504797369770, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
     keyClip: {fileID: 0}
   - keyName: Nanas
     keyPoints: 100
     keyImage: {fileID: -7470035751998364256, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
-    keyArab: {fileID: 0}
+    keyArab: {fileID: 5901706917371663327, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
     keyClip: {fileID: 0}
   - keyName: Anggur
     keyPoints: 100
     keyImage: {fileID: 436765707151281976, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
-    keyArab: {fileID: 0}
+    keyArab: {fileID: 4764173429701385740, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
     keyClip: {fileID: 0}
   - keyName: Jeruk
     keyPoints: 100
     keyImage: {fileID: -488630616379031159, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
-    keyArab: {fileID: 0}
+    keyArab: {fileID: -7709211871459880226, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
     keyClip: {fileID: 0}
   - keyName: Kelapa
     keyPoints: 100
     keyImage: {fileID: -7522400636702719430, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
-    keyArab: {fileID: 0}
+    keyArab: {fileID: 6710796074571812167, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
     keyClip: {fileID: 0}
   - keyName: Pisang
     keyPoints: 100
     keyImage: {fileID: -8576382148408571288, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
-    keyArab: {fileID: 0}
+    keyArab: {fileID: 3868189343299491578, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
     keyClip: {fileID: 0}
   - keyName: Apel
     keyPoints: 100
     keyImage: {fileID: 5421552223580321857, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
-    keyArab: {fileID: 0}
+    keyArab: {fileID: 9087004976340774036, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
     keyClip: {fileID: 0}
   - keyName: Ceri
     keyPoints: 100
     keyImage: {fileID: -6080976025523892005, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
-    keyArab: {fileID: 0}
+    keyArab: {fileID: 871702888581134976, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
     keyClip: {fileID: 0}
   keywordsRumah: []
   keywordsBuah: []

@@ -50,8 +50,10 @@ public class ChoicesManager : MonoBehaviour
             childs[i].objName = choices[i].keyName;
             childs[i].objImage = choices[i].keyImage;
 
-            SpriteRenderer x = childs[i].gameObject.GetComponent<SpriteRenderer>(); 
-            x.sprite = choices[i].keyImage;
+            // SpriteRenderer x = childs[i].gameObject.GetComponent<SpriteRenderer>(); 
+            // x.sprite = choices[i].keyImage;
+
+            childs[i].ChangeImage();
         }
     }
 

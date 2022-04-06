@@ -11,6 +11,8 @@ public class Snap : MonoBehaviour
     public delegate void OnAnswerTrue();
     public OnAnswerTrue changeNumber;
 
+    // Variables
+    public SpriteRenderer image;
     public float snapRange = .5f;
 
     public int number = 1;
@@ -34,15 +36,21 @@ public class Snap : MonoBehaviour
 
         // send delegate to choices
         changeChoices();
+
+        // set first question image
+        image.sprite = keyword[0].keyArab;
     }
     
     public void checkAnswer(GameObject obj) {
         Choices y = obj.GetComponent<Choices>();
         // Debug.Log(y.objName);
 
+        // answer true
         if (y.objName == keyword[number-1].keyName) {
-            Debug.Log(true);
+            // change question image
+            image.sprite = keyword[number-1].keyArab;
 
+            // next question
             if (number != maxNumber) {
                 number++;
                 changeNumber();

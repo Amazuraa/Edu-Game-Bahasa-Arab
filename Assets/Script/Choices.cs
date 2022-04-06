@@ -6,6 +6,8 @@ public class Choices : MonoBehaviour
 {
     public string objName;
     public Sprite objImage;
+    public SpriteRenderer image;
+    public Animator animator;
     public Snap target;
 
     // Start is called before the first frame update
@@ -30,5 +32,9 @@ public class Choices : MonoBehaviour
         }
 
         // Debug.Log(dist);
+    }
+
+    public void ChangeImage() {
+        image.sprite = objImage;
     }
 }
