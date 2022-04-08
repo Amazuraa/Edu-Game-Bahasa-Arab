@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager instance;
+
     // Variables
     public GameLevels[] levels;
     public GameKeywords[] keywordsKelas;
     public GameKeywords[] keywordsRumah;
     public GameKeywords[] keywordsBuah;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        if(instance == null){
+			instance = this;
+			DontDestroyOnLoad(this.gameObject);
+		} 
+        else 
+			Destroy(gameObject);        
     }
 }
 
@@ -21,6 +27,9 @@ public class GameManager : MonoBehaviour
 public class GameLevels {
     public string lvlName;
     public bool lvlLocked;
+    public int lvlPoints;
+    public int lvlAnswered;
+    public bool lvlCompleted;
     public int lvlRequire;
 }
 

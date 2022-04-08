@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Snap : MonoBehaviour
 {
@@ -47,20 +48,32 @@ public class Snap : MonoBehaviour
 
         // answer true
         if (y.objName == keyword[number-1].keyName) {
-            // change question image
-            image.sprite = keyword[number-1].keyArab;
+
+            // update points
+            gameManager.levels[0].lvlAnswered++;
+            gameManager.levels[0].lvlPoints += keyword[number-1].keyPoints;
 
             // next question
             if (number != maxNumber) {
                 number++;
                 changeNumber();
+
+                // change question image
+                image.sprite = keyword[number-1].keyArab;
+            }
+            // finish
+            else
+            {
+			    StartCoroutine(LoadWin());
             }
         }
         else
             Debug.Log(false);
     }
 
-    // public void changeNumber() {
-    //     buttonClickDelegate ();
-    // }
+    IEnumerator LoadWin(){
+		// puzzleAnim.SetTrigger("In");
+		yield return new WaitForSeconds(2f);
+		SceneManager.LoadScene("Win");
+	}
 }
