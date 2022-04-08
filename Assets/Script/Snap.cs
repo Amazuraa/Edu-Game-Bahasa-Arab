@@ -18,9 +18,12 @@ public class Snap : MonoBehaviour
 
     public int number = 1;
     public int maxNumber = 6;
+    public GameObject dropPos;
     public List<GameKeywords> keyword = new List<GameKeywords>();
 
     static GameManager gameManager;
+    static DropOutline outline;
+    public Animator cameraAnim;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,9 @@ public class Snap : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         int lvlLength = gameManager.keywordsKelas.Length;
         
+        // get outline
+        outline = gameObject.GetComponent<DropOutline>();
+
         // loop for random answer
         for (int i = 0; i < 6; i++) {
             int idx = Random.Range(0, lvlLength);
@@ -56,10 +62,13 @@ public class Snap : MonoBehaviour
             // next question
             if (number != maxNumber) {
                 number++;
-                changeNumber();
+                // changeNumber();
 
                 // change question image
                 image.sprite = keyword[number-1].keyArab;
+
+                // put obj back
+                StartCoroutine(ChangePos(y, 1f));
             }
             // finish
             else
@@ -68,12 +77,24 @@ public class Snap : MonoBehaviour
             }
         }
         else
-            Debug.Log(false);
+        {
+            // put obj back
+            StartCoroutine(ChangePos(y, 1f));
+            cameraAnim.SetTrigger("Shake");
+        }
     }
 
     IEnumerator LoadWin(){
 		// puzzleAnim.SetTrigger("In");
 		yield return new WaitForSeconds(2f);
 		SceneManager.LoadScene("Win");
+	}
+
+    IEnumerator ChangePos(Choices obj, float delay){
+		// puzzleAnim.SetTrigger("In");
+		yield return new WaitForSeconds(delay);
+        changeNumber();
+		obj.DefaultPosition();
+        outline.DefaultOutline();
 	}
 }
