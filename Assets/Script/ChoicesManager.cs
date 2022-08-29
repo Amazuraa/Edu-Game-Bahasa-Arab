@@ -6,9 +6,11 @@ public class ChoicesManager : MonoBehaviour
 {
     static GameManager gameManager;
     public Snap target;
+    public Sprite arabOutline;
     public Choices[] childs = new Choices[3];
     public List<GameKeywords> choices = new List<GameKeywords>();
 
+    private GameKeywords[] keywords;
 
     void Awake() {
         target.changeNumber += RefreshChoices;
@@ -22,17 +24,33 @@ public class ChoicesManager : MonoBehaviour
 
     void NewChoices() {
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        int length = gameManager.keywordsKelas.Length;
+
+        switch (gameManager.keywordsMode)
+        {
+            case "Buah":
+                keywords = gameManager.keywordsBuah;
+                break;
+            case "Kelas":
+                keywords = gameManager.keywordsKelas;
+                break;
+            case "Rumah":
+                keywords = gameManager.keywordsRumah;
+                break;
+        }
+
+        int length = keywords.Length;
 
         choices.Clear();
 
         int answerIdx = target.number - 1;
+        bool odd = (target.number % 2 == 0) ? true : false;
+
         string answerName = target.keyword[answerIdx].keyName;
 
-        int placement = Random.Range(0, 3);
+        int placement = Random.Range(0, childs.Length);
         int storeIdx = -1;
 
-        for (int i = 0; i < 3; i++) 
+        for (int i = 0; i < childs.Length; i++) 
         {
             if (i == placement) 
                 choices.Add(target.keyword[answerIdx]);
@@ -40,24 +58,47 @@ public class ChoicesManager : MonoBehaviour
             {
                 int idx = Random.Range(0, length);
 
-                if (answerName == gameManager.keywordsKelas[idx].keyName || storeIdx == idx)
+                if (answerName == keywords[idx].keyName || storeIdx == idx)
                     idx = Random.Range(0, length);
 
-                choices.Add(gameManager.keywordsKelas[idx]);
+                choices.Add(keywords[idx]);
                 storeIdx = idx;
             }
 
             childs[i].objName = choices[i].keyName;
-            childs[i].objImage = choices[i].keyImage;
 
+            if (!odd) {
+                
+                childs[i].objImage = choices[i].keyImage;
+                childs[i].objImageOutline = choices[i].keyOutline;
+            }
+            else {
+                // childs[i].StateAnim(true);
+                childs[i].objImage = choices[i].keyArab;
+                childs[i].objImageOutline = arabOutline;
+            }
+
+            if (!odd)
+                childs[i].StateAnim(false);
+            else
+                childs[i].StateAnim(true);
+
+            childs[i].ChangeImage();
+
+            
             // SpriteRenderer x = childs[i].gameObject.GetComponent<SpriteRenderer>(); 
             // x.sprite = choices[i].keyImage;
 
-            childs[i].ChangeImage();
+            
         }
     }
 
     void RefreshChoices() {
         NewChoices();
     }
+
+    // IEnumerator DelayChoice() {
+	// 	yield return new WaitForSeconds(.2f);
+
+    // }
 }

@@ -1,5 +1,448 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &641101461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641101462}
+  - component: {fileID: 641101463}
+  m_Layer: 0
+  m_Name: Obj (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &641101462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641101461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.05, y: 3.65, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1088134849}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &641101463
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641101461}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 8287873616420496286, guid: 9acfeb8242a56df40bc46bbc78df93c7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 13.890848, y: 8.87}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1088134848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1088134849}
+  m_Layer: 0
+  m_Name: Clouds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1088134849
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088134848}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1552576354}
+  - {fileID: 641101462}
+  - {fileID: 2147188191}
+  m_Father: {fileID: 5688941661442967443}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1548103355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1548103356}
+  - component: {fileID: 1548103357}
+  m_Layer: 0
+  m_Name: BG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1548103356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548103355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalScale: {x: 0.82, y: 0.73, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5688941661442967443}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1548103357
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548103355}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 25a2b1033c11e2e4cb0172552edaa5e7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 24.48, y: 17.284218}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1552576353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1552576354}
+  - component: {fileID: 1552576355}
+  m_Layer: 0
+  m_Name: Obj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1552576354
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552576353}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.31, y: 2.32, z: 0}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1088134849}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1552576355
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552576353}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 7911139459876737251, guid: 9acfeb8242a56df40bc46bbc78df93c7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 13.890848, y: 8.87}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &1857872442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1857872444}
+  - component: {fileID: 1857872443}
+  m_Layer: 0
+  m_Name: Sky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1857872444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857872442}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.57, z: 2}
+  m_LocalScale: {x: 50, y: 0.59, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5688941661442967443}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1857872443
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857872442}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 7b5cff77b82af1a488b4f13b5cbc22bb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.42, y: 17.48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &2147188190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2147188191}
+  - component: {fileID: 2147188192}
+  m_Layer: 0
+  m_Name: Obj (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2147188191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147188190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.06, y: 1.58, z: -2}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1088134849}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2147188192
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147188190}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -1115256706364395465, guid: 9acfeb8242a56df40bc46bbc78df93c7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 13.890848, y: 8.87}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &885575674866636220
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,6 +452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5688941661442967443}
+  - component: {fileID: 2531102522066396929}
   - component: {fileID: 7187299792084404266}
   m_Layer: 0
   m_Name: GameManager
@@ -27,10 +471,109 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1548103356}
+  - {fileID: 1857872444}
+  - {fileID: 1088134849}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2531102522066396929
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885575674866636220}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.35
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &7187299792084404266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,61 +586,301 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85a89f1cbc7cff94d801ebc104171137, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bgm: {fileID: 8300000, guid: 9e05bfd0cfbe6244c9de4b323a5c1921, type: 3}
   levels:
-  - lvlName: Buah-Buahan
+  - lvlName: Kelas
     lvlLocked: 0
+    lvlPoints: 0
+    lvlAnswered: 0
+    lvlCompleted: 0
     lvlRequire: 0
-  - lvlName: Benda dalam Kelas
+  - lvlName: Rumah
     lvlLocked: 1
+    lvlPoints: 0
+    lvlAnswered: 0
+    lvlCompleted: 0
     lvlRequire: 500
-  - lvlName: Benda dalam Rumah
+  - lvlName: Buah
     lvlLocked: 1
+    lvlPoints: 0
+    lvlAnswered: 0
+    lvlCompleted: 0
     lvlRequire: 1000
+  keywordsMode: Rumah
   keywordsKelas:
+  - keyName: Penggaris
+    keyPoints: 100
+    keyImage: {fileID: 8342207428426078930, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: -225617149078359753, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: 7566089105457638934, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: f4c0fc6bcc9728a47945d3ccf8fc3205, type: 3}
+  - keyName: Spidol
+    keyPoints: 100
+    keyImage: {fileID: 1478975090464457628, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: 7999638996117214641, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: -8258627405007958166, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: cecf65de4aceca64abaea688ad5d76e6, type: 3}
+  - keyName: Pulpen
+    keyPoints: 100
+    keyImage: {fileID: 2449184633926649968, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: 5329722647345242586, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: 6977921848288727702, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: af093a2460ae1e141bf3213db552336e, type: 3}
+  - keyName: Tas
+    keyPoints: 100
+    keyImage: {fileID: 9257646725783855, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: -7157562165231829231, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: 3920957156605180158, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: b844be98a6a36054fac7378ea8c1a73a, type: 3}
+  - keyName: Rautan Pensil
+    keyPoints: 100
+    keyImage: {fileID: 5686494924721641063, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: 6896096391741262595, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: -7483725190554155329, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: 0277e12caff545646af2190d1ad917d6, type: 3}
+  - keyName: Buku
+    keyPoints: 100
+    keyImage: {fileID: -9139033419436304742, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: -4399867292675167242, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: 5070046726805738838, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: 8d1a9874a7fee474fa5e60d5efb4d0a4, type: 3}
+  - keyName: Penghapus
+    keyPoints: 100
+    keyImage: {fileID: 6296958777423173731, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: 5773289157149043174, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: 2939245417940732903, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: b38bfefabd97b4446b811bd31ca1ffc5, type: 3}
+  - keyName: Pensil
+    keyPoints: 100
+    keyImage: {fileID: 2740415964065212414, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: 7343044778860197864, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: -7782617212538855759, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: 6355ae6efb3fdee4587d1189e7493004, type: 3}
+  - keyName: Papan Tulis
+    keyPoints: 100
+    keyImage: {fileID: -7665365469215626205, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: 7271815317574048989, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: 6103215311042277777, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: e9ba1f4e1df777a44b65b522fa26e9bb, type: 3}
+  - keyName: Kertas
+    keyPoints: 100
+    keyImage: {fileID: 7370580398980765747, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: 5019769006804858861, guid: 03a0c1d084a8d1b47a9eb1e7c4b4ff5c, type: 3}
+    keyOutline: {fileID: -2369231965979698240, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: 34c37b2d240d8084890a28e545603458, type: 3}
+  - keyName: Sepatu
+    keyPoints: 100
+    keyImage: {fileID: -5560935241188510994, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: -8112701983817549749, guid: eb09b1175b3a7a44794d4208f72f07e7, type: 3}
+    keyOutline: {fileID: 8994541727303697871, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: 787e15769b13b8a43a819a592fce008b, type: 3}
+  - keyName: Kaos Kaki
+    keyPoints: 100
+    keyImage: {fileID: 614478729830906849, guid: 2cc8e8ae2107d4248990507b60982bc3, type: 3}
+    keyArab: {fileID: -2318605027070852021, guid: eb09b1175b3a7a44794d4208f72f07e7, type: 3}
+    keyOutline: {fileID: -5728918653846260606, guid: b77d583c6acffaa438b50af705de0920, type: 3}
+    keyClip: {fileID: 8300000, guid: 6b2f2a7cbba866644b8884094b231069, type: 3}
+  - keyName: Seragam
+    keyPoints: 100
+    keyImage: {fileID: 3787383181181307817, guid: 8bc6d2bff307281429c1f7aac068a60b, type: 3}
+    keyArab: {fileID: -812492966236381078, guid: 960ac80f5a502f84599d941d09c95ed3, type: 3}
+    keyOutline: {fileID: 564315206808551529, guid: 228aa23f36941ef458d8277fbdb49454, type: 3}
+    keyClip: {fileID: 8300000, guid: d99d1e8992c43f045a8bc8193cad75d4, type: 3}
+  - keyName: Tempat Pensil
+    keyPoints: 100
+    keyImage: {fileID: 6163741758855024498, guid: 8bc6d2bff307281429c1f7aac068a60b, type: 3}
+    keyArab: {fileID: 733545201675049883, guid: 960ac80f5a502f84599d941d09c95ed3, type: 3}
+    keyOutline: {fileID: -3323680450263422698, guid: 228aa23f36941ef458d8277fbdb49454, type: 3}
+    keyClip: {fileID: 8300000, guid: 723b45dfe51a67e44a71ea2febe62b36, type: 3}
+  - keyName: Pensil Warna
+    keyPoints: 100
+    keyImage: {fileID: -5453589484540913999, guid: 8bc6d2bff307281429c1f7aac068a60b, type: 3}
+    keyArab: {fileID: 353092357419523385, guid: 960ac80f5a502f84599d941d09c95ed3, type: 3}
+    keyOutline: {fileID: 4341709797972956449, guid: 228aa23f36941ef458d8277fbdb49454, type: 3}
+    keyClip: {fileID: 8300000, guid: b35f73dc31f644e41967ed99460f100b, type: 3}
+  keywordsRumah:
+  - keyName: Televisi
+    keyPoints: 100
+    keyImage: {fileID: -7760899524881340763, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: 735070741273174925, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: -7085420919680690964, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: 85a0323bd7e4db242a7fe84237c2019d, type: 3}
+  - keyName: Kursi
+    keyPoints: 100
+    keyImage: {fileID: -6457405959233600726, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: -4385516564889433820, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: 7738936902440726010, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: 02eab1aa5407a54498a3e55df74c4f2d, type: 3}
+  - keyName: Lemari
+    keyPoints: 100
+    keyImage: {fileID: 8071613146119284497, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: 2027400313539870397, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: -3610070962626603189, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: 52b155a71dc243945949a6f2ad98e022, type: 3}
+  - keyName: Bantal
+    keyPoints: 100
+    keyImage: {fileID: -7654056593569225604, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: 577340451696411323, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: 7700825100153638628, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: a7ff5358f64ef3d40940871a0e85fbc4, type: 3}
+  - keyName: Cermin
+    keyPoints: 100
+    keyImage: {fileID: 2082963363824920267, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: -3369486267247979415, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: 8012610835295039691, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: 674cc85f40f8ac54983213964dc374ea, type: 3}
+  - keyName: Gelas
+    keyPoints: 100
+    keyImage: {fileID: -1731309649729135744, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: -4685686821770163659, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: 4049757109478788663, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: c897a49fe6b781f4b86a0b788e4daf1e, type: 3}
+  - keyName: Kunci
+    keyPoints: 100
+    keyImage: {fileID: -2270478801182445023, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: -7210270870045833737, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: -4977484066227699152, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: 3436a68344918a044b6d93b7ed9ccc1c, type: 3}
+  - keyName: Jam
+    keyPoints: 100
+    keyImage: {fileID: 1618026918585752572, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: 793899857155739351, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: -3196695739123256480, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: e977f36acf58d72409b0f3962b99a830, type: 3}
+  - keyName: Kipas Angin
+    keyPoints: 100
+    keyImage: {fileID: -7043657066563230600, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: 832860528419131163, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: 6553831658958401346, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: bddc54d06b5274e41a9c58b7ae6ae180, type: 3}
+  - keyName: Piring
+    keyPoints: 100
+    keyImage: {fileID: -2625934628759699756, guid: cc7685556f4d8db4f81a567b78b3da6d, type: 3}
+    keyArab: {fileID: 1036971202262544591, guid: 159d2671a1e4db94ebcb7ab32c51eaaf, type: 3}
+    keyOutline: {fileID: 7483497660664285017, guid: 20c7d0686d85d5d4d9e9b9bb3f00f160, type: 3}
+    keyClip: {fileID: 8300000, guid: 6d4d2c1c830a01f4abef302ae275a5c6, type: 3}
+  - keyName: Gorden
+    keyPoints: 100
+    keyImage: {fileID: -9141423433818008017, guid: 8c368c3ee068905418b8da7845760abb, type: 3}
+    keyArab: {fileID: 6719157836511155488, guid: f81c6fc4ce8c35345ace6ea481819f6f, type: 3}
+    keyOutline: {fileID: 5215776544795090800, guid: c3cfa9c3dfda0a34c93195e3af4190f3, type: 3}
+    keyClip: {fileID: 8300000, guid: d2c408a11d9206747b30acf96f50b71e, type: 3}
+  - keyName: Sejadah
+    keyPoints: 100
+    keyImage: {fileID: 2360056840839394687, guid: 8c368c3ee068905418b8da7845760abb, type: 3}
+    keyArab: {fileID: 8917226399470944785, guid: f81c6fc4ce8c35345ace6ea481819f6f, type: 3}
+    keyOutline: {fileID: -403132463320433797, guid: c3cfa9c3dfda0a34c93195e3af4190f3, type: 3}
+    keyClip: {fileID: 8300000, guid: 450462d3d49ae2c47a919b50c835686c, type: 3}
+  - keyName: Sabun
+    keyPoints: 100
+    keyImage: {fileID: -5384407304624800476, guid: 8c368c3ee068905418b8da7845760abb, type: 3}
+    keyArab: {fileID: -7917958607089377725, guid: f81c6fc4ce8c35345ace6ea481819f6f, type: 3}
+    keyOutline: {fileID: 6801081579241322366, guid: c3cfa9c3dfda0a34c93195e3af4190f3, type: 3}
+    keyClip: {fileID: 8300000, guid: 2a8c2d0bcbacd424d9cdc9624d906e57, type: 3}
+  - keyName: Genteng
+    keyPoints: 100
+    keyImage: {fileID: -2227888372918277276, guid: 8c368c3ee068905418b8da7845760abb, type: 3}
+    keyArab: {fileID: 1340354056500749634, guid: f81c6fc4ce8c35345ace6ea481819f6f, type: 3}
+    keyOutline: {fileID: -7071036623789815019, guid: c3cfa9c3dfda0a34c93195e3af4190f3, type: 3}
+    keyClip: {fileID: 8300000, guid: 9d258b48d6939ea428d7abfdd65745a1, type: 3}
+  - keyName: Kasur
+    keyPoints: 100
+    keyImage: {fileID: -3755546966347595001, guid: 8c368c3ee068905418b8da7845760abb, type: 3}
+    keyArab: {fileID: 4140021495171981166, guid: f81c6fc4ce8c35345ace6ea481819f6f, type: 3}
+    keyOutline: {fileID: -1879214718006187998, guid: c3cfa9c3dfda0a34c93195e3af4190f3, type: 3}
+    keyClip: {fileID: 8300000, guid: 4950e6c425a2894478dcd6dac95853a9, type: 3}
+  keywordsBuah:
   - keyName: Semangka
     keyPoints: 100
     keyImage: {fileID: 5132463934339989631, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
     keyArab: {fileID: -2937944484861216962, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
-    keyClip: {fileID: 0}
+    keyOutline: {fileID: -5121048097879758684, guid: 5f93dbb8113d893409cb29d34a3a20bb, type: 3}
+    keyClip: {fileID: 8300000, guid: 7482ad5a1a00b624ebe0d9883a704711, type: 3}
   - keyName: Alpukat
     keyPoints: 100
     keyImage: {fileID: -5067599375076290027, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
     keyArab: {fileID: -7044727504797369770, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
-    keyClip: {fileID: 0}
+    keyOutline: {fileID: 619956446568164438, guid: 5f93dbb8113d893409cb29d34a3a20bb, type: 3}
+    keyClip: {fileID: 8300000, guid: 64ea0696119f8874fb3c2e1c7494fcce, type: 3}
   - keyName: Nanas
     keyPoints: 100
     keyImage: {fileID: -7470035751998364256, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
     keyArab: {fileID: 5901706917371663327, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
-    keyClip: {fileID: 0}
+    keyOutline: {fileID: 6390389302119417958, guid: 5f93dbb8113d893409cb29d34a3a20bb, type: 3}
+    keyClip: {fileID: 8300000, guid: efd4761976c135447b30cd726827ec64, type: 3}
   - keyName: Anggur
     keyPoints: 100
     keyImage: {fileID: 436765707151281976, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
     keyArab: {fileID: 4764173429701385740, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
-    keyClip: {fileID: 0}
+    keyOutline: {fileID: -9135059575755854451, guid: 5f93dbb8113d893409cb29d34a3a20bb, type: 3}
+    keyClip: {fileID: 8300000, guid: 87bd23a32c31bf44d8a11f19c18f8d5d, type: 3}
   - keyName: Jeruk
     keyPoints: 100
     keyImage: {fileID: -488630616379031159, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
     keyArab: {fileID: -7709211871459880226, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
-    keyClip: {fileID: 0}
+    keyOutline: {fileID: -4445459974113690656, guid: 5f93dbb8113d893409cb29d34a3a20bb, type: 3}
+    keyClip: {fileID: 8300000, guid: 6da12fc60ec83904bae1c0abe9bd745a, type: 3}
   - keyName: Kelapa
     keyPoints: 100
     keyImage: {fileID: -7522400636702719430, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
     keyArab: {fileID: 6710796074571812167, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
-    keyClip: {fileID: 0}
+    keyOutline: {fileID: 4375212515971498767, guid: 5f93dbb8113d893409cb29d34a3a20bb, type: 3}
+    keyClip: {fileID: 8300000, guid: 01accec23d4590d4aa223cd59e98054b, type: 3}
   - keyName: Pisang
     keyPoints: 100
     keyImage: {fileID: -8576382148408571288, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
     keyArab: {fileID: 3868189343299491578, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
-    keyClip: {fileID: 0}
+    keyOutline: {fileID: 1835515088534973105, guid: 5f93dbb8113d893409cb29d34a3a20bb, type: 3}
+    keyClip: {fileID: 8300000, guid: 506716759c6ebda4c81c30b4bce3e68d, type: 3}
   - keyName: Apel
     keyPoints: 100
     keyImage: {fileID: 5421552223580321857, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
     keyArab: {fileID: 9087004976340774036, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
-    keyClip: {fileID: 0}
+    keyOutline: {fileID: -4652401918464386016, guid: 5f93dbb8113d893409cb29d34a3a20bb, type: 3}
+    keyClip: {fileID: 8300000, guid: 1696478fbc45fd647b7f8eac785641a7, type: 3}
   - keyName: Ceri
     keyPoints: 100
     keyImage: {fileID: -6080976025523892005, guid: e206b88d9c8fe6842bc80cdb5e2201f0, type: 3}
     keyArab: {fileID: 871702888581134976, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
-    keyClip: {fileID: 0}
-  keywordsRumah: []
-  keywordsBuah: []
+    keyOutline: {fileID: -6430332020218448999, guid: 5f93dbb8113d893409cb29d34a3a20bb, type: 3}
+    keyClip: {fileID: 8300000, guid: 667ef08cce6959344b620c20ba607811, type: 3}
+  - keyName: Kiwi
+    keyPoints: 100
+    keyImage: {fileID: 4480071087155907253, guid: 3469ba1a6cab1a642bda32594c0567f6, type: 3}
+    keyArab: {fileID: 4321143327723991067, guid: bde0b1a54aaff674888b5e7123a682fc, type: 3}
+    keyOutline: {fileID: 464719591850820583, guid: 11477d5c702902e40b8ed5af2aef2eac, type: 3}
+    keyClip: {fileID: 8300000, guid: 2d447ddf51e44674db061aafd0a0e791, type: 3}
+  - keyName: Jambu
+    keyPoints: 100
+    keyImage: {fileID: -4000055847008967469, guid: 3469ba1a6cab1a642bda32594c0567f6, type: 3}
+    keyArab: {fileID: 3356577197054815297, guid: bde0b1a54aaff674888b5e7123a682fc, type: 3}
+    keyOutline: {fileID: -7860077234920509135, guid: 11477d5c702902e40b8ed5af2aef2eac, type: 3}
+    keyClip: {fileID: 8300000, guid: acf358f1d2c0c0247b043825a16759cc, type: 3}
+  - keyName: Melon
+    keyPoints: 100
+    keyImage: {fileID: -3184791643424433174, guid: 3469ba1a6cab1a642bda32594c0567f6, type: 3}
+    keyArab: {fileID: 7519836241943161180, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
+    keyOutline: {fileID: 6107990010836912006, guid: 11477d5c702902e40b8ed5af2aef2eac, type: 3}
+    keyClip: {fileID: 8300000, guid: c5e44be2adbb777468e593882fed79f7, type: 3}
+  - keyName: Mangga
+    keyPoints: 100
+    keyImage: {fileID: 7234473974273481779, guid: 3469ba1a6cab1a642bda32594c0567f6, type: 3}
+    keyArab: {fileID: 1319340211686210840, guid: bde0b1a54aaff674888b5e7123a682fc, type: 3}
+    keyOutline: {fileID: -4500346084364925926, guid: 11477d5c702902e40b8ed5af2aef2eac, type: 3}
+    keyClip: {fileID: 8300000, guid: 651ead728e5fbb74badf6ad3c7b312e0, type: 3}
+  - keyName: Kurma
+    keyPoints: 100
+    keyImage: {fileID: 8826565912644148803, guid: 3469ba1a6cab1a642bda32594c0567f6, type: 3}
+    keyArab: {fileID: 3473077716011570167, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
+    keyOutline: {fileID: -5737428830537301436, guid: 11477d5c702902e40b8ed5af2aef2eac, type: 3}
+    keyClip: {fileID: 8300000, guid: f724e617458fdd549a177ccddf2e0300, type: 3}
+  - keyName: Pepaya
+    keyPoints: 100
+    keyImage: {fileID: -708845758599676452, guid: 3469ba1a6cab1a642bda32594c0567f6, type: 3}
+    keyArab: {fileID: 177330592590238941, guid: dec11c12bbe87164da4c3b0b4c7a4f1a, type: 3}
+    keyOutline: {fileID: 4737082223006646151, guid: 11477d5c702902e40b8ed5af2aef2eac, type: 3}
+    keyClip: {fileID: 8300000, guid: 1cd54b18a19d60d458239a3d17334c83, type: 3}
+  backGlobal: 
+  gameFinished: 0
+  backupPoints: 0
+  backupAnswer: 0

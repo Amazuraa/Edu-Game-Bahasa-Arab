@@ -6,6 +6,7 @@ public class Choices : MonoBehaviour
 {
     public string objName;
     public Sprite objImage;
+    public Sprite objImageOutline;
     public Vector3 objPosition;
     public SpriteRenderer image;
     public Animator animator;
@@ -21,10 +22,10 @@ public class Choices : MonoBehaviour
 
     void OnMouseDrag() {
         Vector2 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		transform.position = pos;
+		transform.position = new Vector3(pos.x, pos.y, transform.position.z);
 
         // change outline
-        outline.ChangeOutline(objName);
+        outline.ChangeOutline(objImageOutline);
     }
 
     void OnMouseUp() {
@@ -47,11 +48,21 @@ public class Choices : MonoBehaviour
     }
 
     public void ChangeImage() {
+        StartCoroutine(ChangeImageDel());
+    }
+
+    IEnumerator ChangeImageDel() {
+		yield return new WaitForSeconds(1f);
+        // Debug.Log("X");
         image.sprite = objImage;
     }
 
     public void DefaultPosition() {
         // Debug.Log( transform.position +" "+ objPosition);
         transform.position = objPosition;
+    }
+
+    public void StateAnim(bool stat) {
+        animator.SetBool("None", stat);
     }
 }

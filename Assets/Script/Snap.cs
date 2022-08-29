@@ -25,20 +25,42 @@ public class Snap : MonoBehaviour
     static DropOutline outline;
     public Animator cameraAnim;
 
+    private GameKeywords[] keywords;
+    private int idxMode;
+
+    public AudioSource source;
+    public AudioClip clip;
+    public AudioClip clip2;
+
+
     // Start is called before the first frame update
     void Start()
     {
         // get Game Manager
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        int lvlLength = gameManager.keywordsKelas.Length;
+        
+        switch (gameManager.keywordsMode)
+        {
+            case "Buah":
+                keywords = gameManager.keywordsBuah;
+                break;
+            case "Kelas":
+                keywords = gameManager.keywordsKelas;
+                break;
+            case "Rumah":
+                keywords = gameManager.keywordsRumah;
+                break;
+        }
+
+        int lvlLength = keywords.Length;
         
         // get outline
         outline = gameObject.GetComponent<DropOutline>();
 
         // loop for random answer
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < maxNumber; i++) {
             int idx = Random.Range(0, lvlLength);
-            keyword.Add(gameManager.keywordsKelas[idx]);
+            keyword.Add(keywords[idx]);
         }
 
         // send delegate to choices
@@ -46,35 +68,31 @@ public class Snap : MonoBehaviour
 
         // set first question image
         image.sprite = keyword[0].keyArab;
+
+        // get level mode index
+        int j = 0;
+        foreach (GameLevels level in gameManager.levels)
+        {
+            if (gameManager.keywordsMode == level.lvlName)
+                idxMode = j;
+            
+            j++;
+        }
+
+        // play first audio questions
+        PlayQuestion();
     }
     
     public void checkAnswer(GameObject obj) {
         Choices y = obj.GetComponent<Choices>();
-        // Debug.Log(y.objName);
+        string mode = gameManager.keywordsMode;
 
         // answer true
         if (y.objName == keyword[number-1].keyName) {
 
             // update points
-            gameManager.levels[0].lvlAnswered++;
-            gameManager.levels[0].lvlPoints += keyword[number-1].keyPoints;
-
-            // next question
-            if (number != maxNumber) {
-                number++;
-                // changeNumber();
-
-                // change question image
-                image.sprite = keyword[number-1].keyArab;
-
-                // put obj back
-                StartCoroutine(ChangePos(y, 1f));
-            }
-            // finish
-            else
-            {
-			    StartCoroutine(LoadWin());
-            }
+            gameManager.levels[idxMode].lvlAnswered++;
+            gameManager.levels[idxMode].lvlPoints += keyword[number-1].keyPoints;
         }
         else
         {
@@ -82,19 +100,80 @@ public class Snap : MonoBehaviour
             StartCoroutine(ChangePos(y, 1f));
             cameraAnim.SetTrigger("Shake");
         }
+
+        // next question
+        if (number != maxNumber) {
+            number++;
+
+            // change question image
+            bool odd = (number % 2 == 0) ? true : false;
+            StartCoroutine(ChangeImage(odd));
+
+            // play audio question
+            PlayQuestion();
+
+            // put obj back
+            StartCoroutine(ChangePos(y, 1f));
+        }
+        // finish
+        else
+            StartCoroutine(LoadWin());      
     }
 
-    IEnumerator LoadWin(){
-		// puzzleAnim.SetTrigger("In");
-		yield return new WaitForSeconds(2f);
+    IEnumerator LoadWin() {
+		yield return new WaitForSeconds(.2f);
 		SceneManager.LoadScene("Win");
 	}
 
-    IEnumerator ChangePos(Choices obj, float delay){
-		// puzzleAnim.SetTrigger("In");
-		yield return new WaitForSeconds(delay);
+    IEnumerator ChangePos(Choices obj, float delay) {
         changeNumber();
+		yield return new WaitForSeconds(delay);
 		obj.DefaultPosition();
         outline.DefaultOutline();
 	}
+
+    IEnumerator ChangeImage(bool x) {
+		yield return new WaitForSeconds(1f);
+        if (!x) image.sprite = keyword[number-1].keyArab;
+        else image.sprite = keyword[number-1].keyImage;
+    }
+
+    public void PlayQuestion() {
+        // set audio question
+        if (number % 2 == 0) source.clip = clip;
+        else source.clip = clip2;
+
+        StartCoroutine(PlayDelay());
+        // source.Play();
+
+        // if (number % 2 != 0)
+        //     StartCoroutine(PlayCheck());
+    }
+
+    IEnumerator PlayDelay() {
+		yield return new WaitForSeconds(1f);
+        source.Play();
+
+        if (number % 2 != 0)
+            StartCoroutine(PlayCheck());
+    }
+
+    IEnumerator PlayCheck() {
+        bool stat = true;
+
+        while (stat)
+        {
+            yield return new WaitForSeconds(1f);
+
+            if (!source.isPlaying) {
+                // Bug notes
+                // if (number % 2 != 0) {
+                    source.clip = keyword[number-1].keyClip;
+                    source.Play();
+                // }
+
+                stat = false;
+            }
+        }
+    }
 }

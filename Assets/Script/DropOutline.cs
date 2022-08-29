@@ -5,29 +5,17 @@ using UnityEngine;
 public class DropOutline : MonoBehaviour
 {
     public SpriteRenderer image;
-    public Outline[] targetOutline;
+    public Sprite defaultOutline;
 
-    public void ChangeOutline(string key) 
+    public void ChangeOutline(Sprite img) 
     {
-        foreach (var val in targetOutline)
-        {
-            if (val.keyName == key)
-            {
-                image.sprite = val.keyImage;
-                break;
-            }
-        }
+        image.sprite = img;
     }
 
     public void DefaultOutline()
     {
-        image.sprite = targetOutline[0].keyImage;
+        image.sprite = defaultOutline;
     }
 }
 
-[System.Serializable]
-public class Outline {
-    public string keyName;
-    public Sprite keyImage;
-}
 
